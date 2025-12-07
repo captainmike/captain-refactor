@@ -168,6 +168,47 @@
             font-size: 0.85em;
         }
 
+        .ascii-console {
+            background: #000000;
+            border: 3px solid #333;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 50px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), inset 0 0 60px rgba(0, 255, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ascii-console::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 255, 0, 0.03) 0px,
+                rgba(0, 255, 0, 0.03) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+        }
+
+        .ascii-art {
+            font-family: 'Courier New', Courier, monospace;
+            color: #00ff00;
+            font-size: 16px;
+            line-height: 1.2;
+            white-space: pre;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -199,6 +240,15 @@
             .services {
                 grid-template-columns: 1fr;
             }
+
+            .ascii-console {
+                padding: 20px;
+                margin: 30px 0;
+            }
+
+            .ascii-art {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -217,6 +267,16 @@
                 <p>Captain Refactor is a boutique web development consultancy specializing in Ruby on Rails applications. We partner with startups and established businesses to build robust web applications, modernize legacy systems, and streamline development processes.</p>
                 <p>We believe great software is built on clean architecture, tested code, and clear communication. Whether you're launching a new product, scaling an existing platform, or untangling years of technical debt, we bring the expertise and pragmatism to get it done right.</p>
             </section>
+
+            <div class="ascii-console">
+                <pre class="ascii-art">
+ _   _   _____   _       _        ___    __        __   ___    ____    _       ____  
+| | | | | ____| | |     | |      / _ \   \ \      / /  / _ \  |  _ \  | |     |  _ \ 
+| |_| | |  _|   | |     | |     | | | |   \ \ /\ / /  | | | | | |_) | | |     | | | |
+|  _  | | |___  | |___  | |___  | |_| |    \ V  V /   | |_| | |  _ <  | |___  | |_| |
+|_| |_| |_____| |_____| |_____|  \___/      \_/\_/     \___/  |_| \_\ |_____| |____/ 
+                </pre>
+            </div>
 
             <section class="section">
                 <h2>Services</h2>
