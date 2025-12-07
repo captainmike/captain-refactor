@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Captain Refactor - Expert web development freelancer specializing in custom websites, code refactoring, and performance optimization.">
+    <title>Captain Refactor - Web Development Freelancer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f6f6ef;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background: white;
+            border-bottom: 2px solid #5dade2;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            font-weight: 700;
+            color: #2c3e50;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 1em;
+            color: #5dade2;
+            font-weight: 400;
+        }
+
+        .content {
+            padding: 50px 40px;
+            background: white;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            border-bottom: 2px solid #e8e8e8;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1em;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background: #fafafa;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .service-card:hover {
+            border-color: #5dade2;
+            box-shadow: 0 2px 8px rgba(93, 173, 226, 0.15);
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            font-size: 0.95em;
+            color: #666;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .contact-section {
+            background: #f6f6ef;
+            border-top: 2px solid #5dade2;
+            border-bottom: 2px solid #5dade2;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border: none;
+            padding: 0;
+        }
+
+        .contact-section p {
+            font-size: 1em;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: #5dade2;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: 2px solid #5dade2;
+        }
+
+        .email-link:hover {
+            background: #4a9dd1;
+            border-color: #4a9dd1;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.85em;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 20px;
+            }
+
+            .logo {
+                height: 60px;
+                width: auto;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .tagline {
+                font-size: 0.9em;
+            }
+
+            .content, .contact-section {
+                padding: 40px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.3em;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="cap.png" alt="Captain Refactor logo" class="logo">
+            <div class="header-text">
+                <h1>Captain Refactor</h1>
+                <p class="tagline">Boutique Web Development &amp; Technical Consulting</p>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="section">
+                <p>Captain Refactor is a boutique web development consultancy specializing in Ruby on Rails applications. We partner with startups and established businesses to build robust web applications, modernize legacy systems, and streamline development processes.</p>
+                <p>We believe great software is built on clean architecture, tested code, and clear communication. Whether you're launching a new product, scaling an existing platform, or untangling years of technical debt, we bring the expertise and pragmatism to get it done right.</p>
+            </section>
+
+            <section class="section">
+                <h2>Services</h2>
+                <div class="services">
+                    <div class="service-card">
+                        <h3>Custom Web Development</h3>
+                        <p>Full-stack Ruby on Rails applications built for scale. From MVPs to production-ready platforms, we deliver clean, maintainable code that grows with your business.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Rails Upgrades &amp; Modernization</h3>
+                        <p>Running an older Rails version? We handle complex upgrades, dependency updates, and codebase modernization—minimizing risk and keeping your application secure.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Integrations</h3>
+                        <p>Seamless integrations with Stripe, Shopify, and other service and payment providers. We build reliable billing systems, subscription management, and checkout flows.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="contact-section">
+            <h2>Start a Conversation</h2>
+            <p>Have a project in mind or a codebase that needs attention? Let's talk.</p>
+            <a href="mailto:mike@captain-refactor.co.za" class="email-link">mike@captain-refactor.co.za</a>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Captain Refactor. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
