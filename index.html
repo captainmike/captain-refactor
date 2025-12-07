@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Captain Refactor - Professional Web Development Freelancer">
+    <meta name="description" content="Captain Refactor - Expert web development freelancer specializing in custom websites, code refactoring, and performance optimization.">
     <title>Captain Refactor - Web Development Freelancer</title>
     <style>
         * {
@@ -216,8 +216,11 @@
         </section>
 
         <footer>
-            <p>&copy; 2024 Captain Refactor. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Captain Refactor. All rights reserved.</p>
         </footer>
     </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
